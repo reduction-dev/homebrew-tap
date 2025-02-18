@@ -11,7 +11,7 @@ class Reduction < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/reduction-dev/reduction/releases/download/v0.0.1/reduction_0.0.1_darwin_amd64"
-      sha256 "0b0c6684e7c850189835cb1faf1e3cddb61ab66a6923bf253e017fb56f423a28"
+      sha256 "7aee3e9118150b6ac0d51472db6df3076012fd7486391bac85a65257f5a17bca"
 
       def install
         bin.install "reduction_0.0.1_darwin_amd64" => "reduction"
@@ -19,7 +19,7 @@ class Reduction < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/reduction-dev/reduction/releases/download/v0.0.1/reduction_0.0.1_darwin_arm64"
-      sha256 "7ce8ad014f4c96ab96a0cf6e94a745334defccfb305f893e11d8a02895998837"
+      sha256 "0ace4da08e875684069d08713e9e69cbd3f183cccce35319703dbea35b5bd189"
 
       def install
         bin.install "reduction_0.0.1_darwin_arm64" => "reduction"
@@ -31,7 +31,7 @@ class Reduction < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/reduction-dev/reduction/releases/download/v0.0.1/reduction_0.0.1_linux_amd64"
-        sha256 "8057b0d590c2dc8464199eafebd6f326902d26000595547750b1a535bcb06968"
+        sha256 "6d22800172eddfcf7c0658774bf91593ea4bfd44fc7e19824243b389f2142b1a"
 
         def install
           bin.install "reduction_0.0.1_linux_amd64" => "reduction"
@@ -41,7 +41,7 @@ class Reduction < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/reduction-dev/reduction/releases/download/v0.0.1/reduction_0.0.1_linux_arm64"
-        sha256 "422907c19004bc1b400247e52cf7b6073891429a81081a8bab82e49fa1cf550b"
+        sha256 "3f7834df91131e2016665994b2c784e5144a8e7113d17ce5a17c7e5d7bbecca0"
 
         def install
           bin.install "reduction_0.0.1_linux_arm64" => "reduction"
