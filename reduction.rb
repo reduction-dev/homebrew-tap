@@ -5,24 +5,24 @@
 class Reduction < Formula
   desc "Stream processing engine"
   homepage "https://reduction.dev"
-  version "0.0.2"
+  version "0.0.3"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/reduction-dev/reduction/releases/download/v0.0.2/reduction_0.0.2_darwin_amd64"
-      sha256 "7c5bd6a7d71eb9a27e223ca010f892db9c6cc6e9501148a2a67665884e47b2a7"
+      url "https://github.com/reduction-dev/reduction/releases/download/v0.0.3/reduction_0.0.3_darwin_amd64"
+      sha256 "c4feb0bfedb01be318dd4315600170596a5cbeda1a4640865973e592823b8109"
 
       def install
-        bin.install "reduction_0.0.2_darwin_amd64" => "reduction"
+        bin.install "reduction_0.0.3_darwin_amd64" => "reduction"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/reduction-dev/reduction/releases/download/v0.0.2/reduction_0.0.2_darwin_arm64"
-      sha256 "18a130848777dcd00217017bff81293769c1bbbd6d8641a8ed779443f4d3a602"
+      url "https://github.com/reduction-dev/reduction/releases/download/v0.0.3/reduction_0.0.3_darwin_arm64"
+      sha256 "e0ff7921a5865049623c76a4298e8a339a04acdacf0c4a05356864b77eca53be"
 
       def install
-        bin.install "reduction_0.0.2_darwin_arm64" => "reduction"
+        bin.install "reduction_0.0.3_darwin_arm64" => "reduction"
       end
     end
   end
@@ -30,21 +30,21 @@ class Reduction < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/reduction-dev/reduction/releases/download/v0.0.2/reduction_0.0.2_linux_amd64"
-        sha256 "88ca98d92be839175595762bb59b605bf56756bdfaf75a43eb62db0e811108f6"
+        url "https://github.com/reduction-dev/reduction/releases/download/v0.0.3/reduction_0.0.3_linux_amd64"
+        sha256 "58da9400af0dd131a50f69da344d41aae966b16303bd78e8fe1cb9dbc875d9c7"
 
         def install
-          bin.install "reduction_0.0.2_linux_amd64" => "reduction"
+          bin.install "reduction_0.0.3_linux_amd64" => "reduction"
         end
       end
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/reduction-dev/reduction/releases/download/v0.0.2/reduction_0.0.2_linux_arm64"
-        sha256 "c6d69f23dd997e88d8465bb3ee8e65091656b37f7ba662ae7aa913b60def81b2"
+        url "https://github.com/reduction-dev/reduction/releases/download/v0.0.3/reduction_0.0.3_linux_arm64"
+        sha256 "f8c2a04f6700dc31d15818948e077b6f249c5d7b44bd941185ab95e83da253ed"
 
         def install
-          bin.install "reduction_0.0.2_linux_arm64" => "reduction"
+          bin.install "reduction_0.0.3_linux_arm64" => "reduction"
         end
       end
     end
